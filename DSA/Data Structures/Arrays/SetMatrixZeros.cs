@@ -4,6 +4,10 @@ using System.Text;
 
 namespace DSA.Data_Structures.Arrays
 {
+
+    /// <summary>
+    /// https://leetcode.com/problems/set-matrix-zeroes/submissions/
+    /// </summary>
     public static class SetMatrixZeros
     {
         public static void Run()
