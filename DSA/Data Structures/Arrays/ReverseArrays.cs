@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace DSA.Data_Structures
+namespace DSA.Data_Structures.Arrays
 {
-    public static class Arrays
+    public static class ReverseArrays
     {
         
         #region https://www.hackerrank.com/challenges/arrays-ds/problem
