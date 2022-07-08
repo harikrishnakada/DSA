@@ -16,10 +16,10 @@ namespace DSA.Data_Structures
         //                new int[] { 5, 6, 7, 8},
         //                new int[] { 9, 10, 11, 12 }
         //            };
-        public static IList<int> SpiralOrder(int[][] a)
+        public static IList<int> SpiralOrder(int[][] matrix)
         {
-            var R = a.Length;
-            var C = a[0].Length;
+            var R = matrix.Length;
+            var C = matrix[0].Length;
             bool[,] visited = new bool[R, C];
             var output = "";
             var strList = new List<int>();
@@ -34,8 +34,8 @@ namespace DSA.Data_Structures
                 {
                     if (visited[start, i] == false)
                     {
-                        output = $"{output} {a[start][i]}";
-                        strList.Add(a[start][i]);
+                        output = $"{output} {matrix[start][i]}";
+                        strList.Add(matrix[start][i]);
                         visited[start, i] = true;
                     }
                 }
@@ -45,8 +45,8 @@ namespace DSA.Data_Structures
                 {
                     if (visited[i, C - 1] == false)
                     {
-                        output = $"{output} {a[i][C - 1]}";
-                        strList.Add(a[i][C - 1]);
+                        output = $"{output} {matrix[i][C - 1]}";
+                        strList.Add(matrix[i][C - 1]);
                         visited[i, C - 1] = true;
                     }
                 }
@@ -56,8 +56,8 @@ namespace DSA.Data_Structures
                 {
                     if (visited[R - 1, i] == false)
                     {
-                        output = $"{output} {a[R - 1][i]}";
-                        strList.Add(a[R - 1][i]);
+                        output = $"{output} {matrix[R - 1][i]}";
+                        strList.Add(matrix[R - 1][i]);
                         visited[R - 1, i] = true;
                     }
                 }
@@ -67,8 +67,8 @@ namespace DSA.Data_Structures
                 {
                     if (visited[i, start] == false)
                     {
-                        output = $"{output} {a[i][start]}";
-                        strList.Add(a[i][start]);
+                        output = $"{output} {matrix[i][start]}";
+                        strList.Add(matrix[i][start]);
                         visited[i, 0] = true;
                     }
                 }
