@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DSA
 {
-    public static class Algorithms
+    public static class Algorithms1
     {
 
         #region Binary Search Algorithm
