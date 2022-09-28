@@ -49,5 +49,36 @@ namespace DSA.Algorithms.BinarySearch
             return res;
         }
 
+        public static int Run2()
+        {
+            var nums = new int[] { 5, 1, 2, 3, 4 };
+            int target = 1;
+
+            int l = 0, h = nums.Length - 1, m = -1, res = -1;
+
+            while (l <= h)
+            {
+                m = l + (h - l) / 2;
+
+                if (nums[l] <= nums[m])
+                {
+                    if(target > nums[m])
+                    {
+                        l = m + 1;
+                    }
+                    else
+                    {
+                        h = m - 1;
+                    }
+                }
+                else
+                {
+                    
+                }
+            }
+
+            return res;
+        }
+
     }
 }
